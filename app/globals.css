@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root { color-scheme: light; }
+
+
+body {
+@apply bg-lavender-50 text-gray-900 antialiased;
+}
+
+
+.container { @apply max-w-2xl mx-auto px-4; }
+.card { @apply bg-white shadow-soft rounded-2xl p-5; }
+.btn { @apply rounded-2xl px-4 py-2 font-medium; }
+.btn-primary { @apply bg-lavender-400 text-white hover:bg-lavender-500; }
+.btn-ghost { @apply bg-lavender-100 text-lavender-900 hover:bg-lavender-200; }
+.input { @apply w-full rounded-2xl border border-gray-200 bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-lavender-300; }
+.badge { @apply inline-block rounded-2xl bg-lavender-100 px-3 py-1 text-sm text-lavender-900; }
+.nav { @apply sticky bottom-0 z-10 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/50; }
